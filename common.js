@@ -1,3 +1,4 @@
+var _ = require("./index");
 module.exports = {
     //获取url上的参数
     getUrlSearch: function(param) {
@@ -22,5 +23,14 @@ module.exports = {
             }
         }
         return newArr;
-    }
+    },
+    //对象是否为空
+    isEmptyObject: function(obj) {
+        var name;
+        for (name in obj) {
+            return false;
+        }
+        return true;
+    },
+
 }
