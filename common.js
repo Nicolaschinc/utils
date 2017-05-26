@@ -8,5 +8,19 @@ module.exports = {
         } else {
             return undefined;
         }
+    },
+    //数组去重
+    uniqArray: function(arr) {
+        var newArr = [];
+        var objArr = {};
+
+        for (var i = 0; i < arr.length; i++) {
+            var tempVal = arr[i];
+            if (objArr[tempVal] !== 1) {
+                newArr.push(tempVal);
+                objArr[tempVal] = 1;
+            }
+        }
+        return newArr;
     }
 }
