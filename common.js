@@ -32,5 +32,33 @@ module.exports = {
         }
         return true;
     },
+    //遍历
+    each: function(obj, fun) {
+        if (_.isObject(obj)) {
+            //对象
+            var name;
+
+            for (name in obj) {
+                fun.call(obj, obj[name], name)
+            }
+
+        } else if (_.isArray(obj)) {
+            //数组
+            var len = obj.length;
+            var i = 0;
+
+            for (; i < len; i++) {
+                fun.call(obj[i], obj[i], i);
+            }
+            return obj;
+        } else {
+            console.log("error:traversal object is not Object or Array!")
+        }
+
+    }
+
+
+
+
 
 }

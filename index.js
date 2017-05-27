@@ -12,28 +12,31 @@ module.exports = {
         return obj === null;
     },
     isObject: function(obj) {
-        return Object.prototype.toString.call(obj) === '[Object Object]';
+        return Object.prototype.toString.call(obj) === '[object Object]';
     },
     isBoolean: function(obj) {
-        return Object.prototype.toString.call(obj) === '[Object Boolean]';
+        return Object.prototype.toString.call(obj) === '[object Boolean]';
     },
-    isArray: function(Obj) {
-        return Object.prototype.toString.call(obj) === '[Object Array]';
+    isArray: function(obj) {
+        return Object.prototype.toString.call(obj) === '[object Array]';
     },
     isFunction: function(obj) {
-        return Object.prototype.toString.call(obj) === '[Object Function]';
+        return Object.prototype.toString.call(obj) === '[object Function]';
     },
     isNumber: function(obj) {
-        return Object.prototype.toString.call(obj) === '[Object Number]';
+        return Object.prototype.toString.call(obj) === '[object Number]';
     },
     isDate: function(obj) {
-        return Object.prototype.toString.call(obj) === '[Object Date]';
+        return Object.prototype.toString.call(obj) === '[object Date]';
     },
     isString: function(obj) {
-        return Object.prototype.toString.call(obj) === '[Object String]';
+        return Object.prototype.toString.call(obj) === '[object String]';
     },
     isNaN: function(obj) {
         return obj !== obj;
     },
+    has: function(obj, key) {
+        return Object.prototype.hasOwnProperty.call(obj, key);
+    }
 
 }
