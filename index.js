@@ -1,3 +1,8 @@
+/**
+ * created by Nico at 2017/05/26
+ * 
+ */
+
 module.exports = {
 
     isUndefined: function(obj) {
