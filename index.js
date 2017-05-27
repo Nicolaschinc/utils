@@ -24,7 +24,11 @@ module.exports = {
     isDate: function(obj) {
         return Object.prototype.toString.call(obj) === '[Object Date]';
     },
+    isString: function(obj) {
+        return Object.prototype.toString.call(obj) === '[Object String]';
+    },
     isNaN: function(obj) {
         return obj !== obj;
-    }
+    },
+
 }
