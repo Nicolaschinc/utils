@@ -1,4 +1,5 @@
 var _ = require("./index");
+
 module.exports = {
     //获取url上的参数
     getUrlSearch: function(param) {
