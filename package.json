@@ -1,0 +1,13 @@
+{
+    "name": "utils",
+    "description": "this is a small javascript usage library ",
+    "author": "Nico",
+    "scripts": {
+        "build": "webpack",
+        "test": "webpack-dev-server"
+    },
+    "devDependencies": {
+        "webpack": "^1.13.2",
+        "webpack-dev-server": "^1.16.2"
+    }
+}
